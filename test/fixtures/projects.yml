@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  client: MyString
+  due: 2013-12-12
+  progress: 1
+
+two:
+  name: MyString
+  description: MyText
+  client: MyString
+  due: 2013-12-12
+  progress: 1

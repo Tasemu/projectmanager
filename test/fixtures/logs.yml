@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project_id: 
+  task_id: 
+  start_time: 2013-12-13 12:49:02
+  end_time: 2013-12-13 12:49:02
+  note: MyText
+  activity: MyString
+
+two:
+  project_id: 
+  task_id: 
+  start_time: 2013-12-13 12:49:02
+  end_time: 2013-12-13 12:49:02
+  note: MyText
+  activity: MyString
