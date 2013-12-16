@@ -70,6 +70,6 @@ class LogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:project_id, :task_id, :start_time, :end_time, :note, :activity)
+      params.require(:log).permit(:task_id, :start_time, :end_time, :note, :activity)
     end
 end

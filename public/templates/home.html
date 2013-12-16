@@ -1,0 +1,26 @@
+<div class='row'>
+	<div class='col-md-12'>
+		<h1>Current Projects</h1>
+		<table class='table table-hover table-striped table-bordered'>
+			<thead>
+				<th>Project</th>
+				<th>Client</th>
+				<th>Due Date</th>
+				<th>Progress</th>
+				<th>View</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="project in projects | orderBy: 'id':true">
+					<td>{{project.name}}</td>
+					<td>{{project.client}}</td>
+					<td>{{project.due}}</td>
+					<td>0%</td>
+					<td><a href='/#/project/view/{{project.id}}'><button class='btn btn-xs btn-info'><span class='glyphicon glyphicon-eye-open'></span></button></a>
+					<a href='/#/project/edit/{{project.id}}'><button class='btn btn-xs btn-warning'><span class='glyphicon glyphicon-pencil'></span></button></a>
+					<button class='btn btn-xs btn-danger' ng-click="deleteProject(project)"><span class='glyphicon glyphicon-trash'></span></button></td>
+				</tr>
+			</tbody>
+		</table>
+		<a href='/#/project/new'><button class='btn btn-sm btn-success'>New Project</button></a>
+	</div>
+</div>

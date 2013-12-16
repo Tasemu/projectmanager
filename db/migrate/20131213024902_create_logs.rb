@@ -1,7 +1,6 @@
 class CreateLogs < ActiveRecord::Migration
   def change
     create_table :logs do |t|
-      t.belongs_to :project, index: true
       t.belongs_to :task, index: true
       t.timestamp :start_time
       t.timestamp :end_time

@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20131213024902) do
   enable_extension "plpgsql"
 
   create_table "logs", force: true do |t|
-    t.integer  "project_id"
     t.integer  "task_id"
     t.datetime "start_time"
     t.datetime "end_time"
@@ -27,7 +26,6 @@ ActiveRecord::Schema.define(version: 20131213024902) do
     t.datetime "updated_at"
   end
 
-  add_index "logs", ["project_id"], name: "index_logs_on_project_id", using: :btree
   add_index "logs", ["task_id"], name: "index_logs_on_task_id", using: :btree
 
   create_table "projects", force: true do |t|

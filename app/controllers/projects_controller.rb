@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
     @projects = Project.all
 
     respond_to do |format|
-      format.json { render :json => @projects.to_json(:include => [:tasks, :logs]) }
+      format.json { render :json => @projects.to_json(:include => :tasks) }
     end
   end
 
@@ -73,6 +73,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:name, :description, :client, :due)
+      params.require(:project).permit(:id, :name, :description, :client, :due)
     end
 end

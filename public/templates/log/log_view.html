@@ -1,0 +1,43 @@
+<div class='row'>
+	<div class='col-md-12'>
+		<h1><span class='text-muted'>[Log]</span> {{logs.activity}}<span class='pull-right text-warning'>12 Hours</span></h1>
+		<hr>
+		<a href='/#/log/edit/{{logs.id}}'><button class='btn btn-sm btn-warning'><span class='glyphicon glyphicon-pencil'></span></button></a>
+		<button class='btn btn-sm btn-danger'><span class='glyphicon glyphicon-trash'></span></button>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-12 tasks-list'>
+		<div class='row'>
+			<div class='col-md-6'>
+				<h2>Details</h2>
+				<div class="panel panel-primary">
+					<div class='panel-heading' style='border-radius:0;'>Start Time</div>
+				  <div class="panel-body">
+       				{{logs.start_time | date:'HH:mm:ss'}}
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+					<div class='panel-heading' style='border-radius:0;'>End Time</div>
+				  <div class="panel-body">
+				    {{logs.end_time | date:'HH:mm:ss'}}
+				  </div>
+				</div>
+				<div class="panel panel-success">
+					<div class='panel-heading' style='border-radius:0;'>Total Time</div>
+				  <div class="panel-body">
+				    {{logs.end_time - logs.start_time}}
+				  </div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<form role='form'>
+					<div class='form-group'>
+						<h2>Notes</h2>
+						<textarea rows='18' class='form-control'></textarea>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
