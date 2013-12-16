@@ -29,27 +29,27 @@ During the first sprint we aim to get a basic version of the API created. The AP
 The API will supply:
 
 - Project
-..* Id
-..* Name
-..* Description
-..* Client
-..* Due date
-..* Created_at
-..* Updated_at
+- Id
+- Name
+- Description
+- Client
+- Due date
+- Created_at
+- Updated_at
 - Tasks
-..* Id
-..* Name
-..* Progress
-..* Project_Id
-..* Created_at
-..* Updated_at
+- Id
+- Name
+- Progress
+- Project_Id
+- Created_at
+- Updated_at
 - Logs
-..* Id
-..* Task_id
-..* Start time
-..* End time
-..* Notes
-..* Activity 
+- Id
+- Task_id
+- Start time
+- End time
+- Notes
+- Activity 
 
 ## Sprint 2
 The second sprint will be concerned with creating the initial front-end of the project.
