@@ -23,7 +23,7 @@ We ourselves will be taking the client position and critically analyzing how ite
   
 # Sprints
 
-## Sprint 1
+## Sprint 1 (Complete)
 During the first sprint we aim to get a basic version of the API created. The API will be utilized by the front-end and serves a JSON API which supplies all relative model data.
 
 The API will supply:
@@ -51,7 +51,7 @@ The API will supply:
 - Notes
 - Activity 
 
-## Sprint 2
+## Sprint 2 (Complete)
 The second sprint will be concerned with creating the initial front-end of the project.
 
 We will be creating the front-end utilizing Angularjs and some very basic styling. The end goal for this sprint is to have a front-end where the user can create projects, assign tasks or project and create logs of time spent working on a specific task and project.
@@ -109,7 +109,7 @@ We will be creating the front-end utilizing Angularjs and some very basic stylin
 - End Time
 - Notes
 
-Sprint 3
+## Sprint 3 (In Progress)
 
 Sprint 3 will consist of hooking up the backend to the front-end and mainly consists of implementing AngularJS to consume the restful API provided by Rails.
 
